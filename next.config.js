@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const path = require("path");
-const { withSentryConfig } = require("@sentry/nextjs");
 
 const nextConfig = {
   output: "export",
@@ -15,8 +14,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withSentryConfig(nextConfig, {
-  org: "nixlab-technologies",
-  project: "portfolio-nextjs",
-  silent: false,
-});
+module.exports = nextConfig;
