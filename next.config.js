@@ -3,6 +3,7 @@ const path = require("path");
 const { withSentryConfig } = require("@sentry/nextjs");
 
 const nextConfig = {
+  output: "export",
   reactStrictMode: true,
   swcMinify: true,
   images: {
@@ -13,3 +14,9 @@ const nextConfig = {
     ],
   },
 };
+
+module.exports = withSentryConfig(nextConfig, {
+  org: "nixlab-technologies",
+  project: "portfolio-nextjs",
+  silent: false,
+});
