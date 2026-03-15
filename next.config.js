@@ -2,7 +2,7 @@
 const path = require("path");
 
 const isGithubActions = process.env.GITHUB_ACTIONS || false;
-let repo = "portfolio-nextjs";
+let repo = "portfolio";
 let assetPrefix = "";
 let basePath = "";
 
