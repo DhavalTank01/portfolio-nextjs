@@ -1,11 +1,11 @@
 class Strings {
   static github = "GitHub";
-  static githubLink = "https://www.github.com/dhavaltank";
-  static githubUsername = "dhavaltank02";
+  static githubLink = "https://github.com/DhavalTank01";
+  static githubUsername = "DhavalTank01";
 
   static linkedIn = "LinkedIn";
   static linkedInLink = "https://www.linkedin.com/in/dhaval-tank-0950ba177/";
-  static linkedInUsername = "dhavaltank";
+  static linkedInUsername = "dhaval-tank-0950ba177";
 
   static instagram = "Instagram";
   static instagramLink = "https://www.instagram.com/dhaval.tank.01";
