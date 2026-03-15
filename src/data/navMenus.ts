@@ -13,37 +13,37 @@ import {
 export const navMenus: INavItem[] = [
   // {
   //   name: "Home",
-  //   link: "/#hero",
+  //   link: "#hero",
   //   icon: faHome,
   // },
   {
     name: "About",
-    link: "/#about",
+    link: "#about",
     icon: faUser,
   },
   {
     name: "Services",
-    link: "/#services",
+    link: "#services",
     icon: faBriefcase,
   },
   {
     name: "Experiences",
-    link: "/#experiences",
+    link: "#experiences",
     icon: faTimeline,
   },
   {
     name: "Skills",
-    link: "/#skills",
+    link: "#skills",
     icon: faAward,
   },
   {
     name: "Projects",
-    link: "/#projects",
+    link: "#projects",
     icon: faLaptopCode,
   },
   {
     name: "Contact",
-    link: "/#contact",
+    link: "#contact",
     icon: faEnvelope,
   },
 ];

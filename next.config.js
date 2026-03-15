@@ -15,7 +15,7 @@ if (isGithubActions) {
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: "export",
+  // output: "export",
   assetPrefix: assetPrefix,
   basePath: basePath,
   images: {
