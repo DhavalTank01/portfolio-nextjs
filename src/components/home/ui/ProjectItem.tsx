@@ -23,8 +23,6 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
             height={100}
             sizes="100%"
             loading="lazy"
-            placeholder="blur"
-            blurDataURL={project.icon}
             className="w-full h-full object-cover aspect-square"
           />
         </Row>
