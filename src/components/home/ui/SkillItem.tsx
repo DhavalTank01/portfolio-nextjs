@@ -1,5 +1,6 @@
 import type { ISkillListItem } from "@/types";
 import Image from "next/image";
+import { getBasePath } from "@/utils/basePath";
 import CardBox from "@/components/core/CardBox";
 import Row from "@/components/core/Row";
 import Column from "@/components/core/Column";
@@ -19,7 +20,7 @@ const SkillItem = ({ data }: { data: ISkillListItem }) => {
               >
                 {skill.icon ? (
                   <Image
-                    src={skill.icon}
+                    src={`${getBasePath()}${skill.icon}`}
                     alt={`logo-${skill.title}`}
                     width={144}
                     height={144}

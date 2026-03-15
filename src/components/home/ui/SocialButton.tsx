@@ -2,6 +2,7 @@ import type { ISocialLinkItem } from "@/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+import { getBasePath } from "@/utils/basePath";
 
 const SocialButton = ({ text, icon, url }: ISocialLinkItem) => {
   return (
@@ -13,7 +14,7 @@ const SocialButton = ({ text, icon, url }: ISocialLinkItem) => {
       <span className="text-xl/6 text-[var(--textColor)]">
         {typeof icon === "string" ? (
           <Image
-            src={icon}
+            src={`${getBasePath()}${icon}`}
             alt={`social-${text}`}
             width={100}
             height={100}

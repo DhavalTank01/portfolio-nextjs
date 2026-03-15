@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import { getBasePath } from "@/utils/basePath";
 import Link from "next/link";
 import Column from "@/components/core/Column";
 import Row from "@/components/core/Row";
@@ -17,7 +18,7 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
       <Column classNames="w-full items-center justify-start">
         <Row classNames="w-[2.5rem] md:w-[3rem] aspect-square items-center justify-center">
           <Image
-            src={project.icon}
+            src={`${getBasePath()}${project.icon}`}
             alt={`project-${project.title}`}
             width={100}
             height={100}
