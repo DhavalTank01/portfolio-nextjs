@@ -7,6 +7,8 @@ const HomeSection3 = dynamic(() => import("@/components/home/Section3"));
 const HomeSection4 = dynamic(() => import("@/components/home/Section4"));
 const HomeSection5 = dynamic(() => import("@/components/home/Section5"));
 const HomeSection6 = dynamic(() => import("@/components/home/Section6"));
+const HomeSection7 = dynamic(() => import("@/components/home/Section7"));
+const HomeSection8 = dynamic(() => import("@/components/home/Section8"));
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <HomeSection2 id="services" />
       <HomeSection3 id="experiences" />
       <HomeSection4 id="skills" />
+      <HomeSection7 id="education" />
+      <HomeSection8 id="certificates" />
       <HomeSection5 id="projects" />
       <HomeSection6 id="contact" />
     </PageBox>

@@ -26,6 +26,20 @@ export interface IExperienceItem {
   description: string[];
 }
 
+export interface IEducationItem {
+  degree: string;
+  institution: string;
+  startDate: string;
+  endDate?: string;
+  isCurrent: boolean;
+  location: string;
+}
+
+export interface ICertificateItem {
+  title: string;
+  provider: string;
+}
+
 export enum RepoType {
   Public,
   Private,
