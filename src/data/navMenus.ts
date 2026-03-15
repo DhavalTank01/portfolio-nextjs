@@ -38,11 +38,6 @@ export const navMenus: INavItem[] = [
     icon: faAward,
   },
   {
-    name: "Projects",
-    link: "#projects",
-    icon: faLaptopCode,
-  },
-  {
     name: "Education",
     link: "#education",
     icon: faGraduationCap,
