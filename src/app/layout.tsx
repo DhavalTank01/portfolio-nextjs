@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { navMenus } from "@/data/navMenus";
+import { getBasePath } from "@/utils/basePath";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -41,25 +42,25 @@ export const metadata: Metadata = {
   },
   icons: [
     {
-      url: "/favicon-16x16.ico",
+      url: `${getBasePath()}/favicon-16x16.ico`,
       rel: "icon",
       sizes: "16x16",
       type: "image/x-icon",
     },
     {
-      url: "/favicon-32x32.ico",
+      url: `${getBasePath()}/favicon-32x32.ico`,
       rel: "icon",
       sizes: "32x32",
       type: "image/x-icon",
     },
     {
-      url: "/favicon-48x48.ico",
+      url: `${getBasePath()}/favicon-48x48.ico`,
       rel: "icon",
       sizes: "48x48",
       type: "image/x-icon",
     },
     {
-      url: "/favicon-64x64.ico",
+      url: `${getBasePath()}/favicon-64x64.ico`,
       rel: "icon",
       sizes: "64x64",
       type: "image/x-icon",
