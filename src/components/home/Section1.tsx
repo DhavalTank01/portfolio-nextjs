@@ -6,6 +6,7 @@ import ResponsiveBox from "@/components/core/ResponsiveBox";
 import Row from "@/components/core/Row";
 import { FlipWords } from "@/components/common/FlipWords";
 import socialLinks from "@/data/socialLinks";
+import ResumeButton from "./ui/ResumeButton";
 
 const HomeSection1 = ({ id }: Readonly<{ id: string }>) => {
   return (
@@ -27,6 +28,10 @@ const HomeSection1 = ({ id }: Readonly<{ id: string }>) => {
           <p className="text-sm/normal md:text-base/normal dark:text-[var(--textColorLight)] text-[var(--textColorLight)]">
             NextJs & ReactJs Developer
           </p>
+
+          <div className="mt-8 flex justify-center">
+            <ResumeButton />
+          </div>
         </Column>
 
         <div className="mt-12 lg:mt-16 w-full flex flex-col items-center">
